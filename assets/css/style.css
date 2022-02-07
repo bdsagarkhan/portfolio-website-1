@@ -1,0 +1,480 @@
+/* ################################################################
+*-----------------------------------------------------------
+* Template Name    : Responsive Bootstrap 4 Personal Template
+* Author           : bdsagarkhan
+* Version          : 1.0.0
+* Created          : March 2021
+* File Description : Main css file of the template
+*------------------------------------------------------------
+################################################################ */
+
+/* ================================================================
+* [All Content]
+*
+	1) BASIC SETUP
+	2) REUSEABLE COMPONENT
+	3) HEADER SECTION
+	4) HOME SECTION
+	5) ABOUT SECTION
+	6) SERVICE SECTION
+	7) HIRE SECTION
+	8) SKILL SECTION
+	9) PORTFOLIO SECTION
+	10) TESTIMONIAL SECTION
+	11) CONTACT SECTION
+	12) FOOTER SECTION
+	13) BACK TO TOP SECTION
+
+=================================================================	/* 
+
+/* ====================================== */
+/* 1) BASIC SETUP */
+/* ====================================== */
+html {
+	/*	font-size: 62.5%; 1rem = 10px */
+	font-size: 100%;
+	scroll-behavior: smooth;
+}
+
+body {
+	/*color: rgba(116, 185, 255,1.0);*/
+	font-family: 'Nunito', sans-serif;
+	text-rendering: optimizeLegibility;
+	font-size: 0.875rem; /*14px*/
+	font-weight: 400;
+	background: rgba(236, 240, 241,1.0); 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700; 
+}
+ol,
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+a,
+a:hover,
+a:link,
+a:visited,
+a:active,
+a:focus,
+button,
+button:focus {
+	text-decoration: none !important;
+	outline: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	-webkit-transition-duration: 500ms;
+	-o-transition-duration: 500ms;
+	transition-duration: 500ms;
+}
+
+/* ====================================== */
+/* 2) Reuseable Component */
+/* ====================================== */
+section {
+	/*background: #fff;*/
+	padding: 100px 0;
+}
+.bg-primary {
+	background-color: rgba(189, 195, 199,1.0)!important;
+}
+.before::before {
+	content: "";
+	position: absolute;
+}
+.after::after {
+	content: "";
+	position: absolute;
+}
+.top-0 {
+	top: 0;
+}
+.right-0 {
+	right: 0;
+}
+.bottom-0 {
+	bottom: 0;
+}
+.left-0 {
+	left: 0;
+}
+.transition {
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.section_subtitle {
+	max-width: 500px;
+}
+
+.about .about_content h2,
+.section_title {
+	border: 2px dotted rgba(189, 195, 199,1.0);
+	display: inline-block;
+	padding: 10px 80px;
+}
+.bg-primary .about .about_content h2,
+.bg-primary .section_title {
+	border-color: #fff;
+}
+.about .about_content h2::before,
+.about .about_content h2::after,
+.section_title::before,
+.section_title::after {
+	width: 30px;
+	height: 30px;
+}
+.about .about_content h2::before,
+.section_title::before {    
+	border-top: 2px solid rgb(252 236 0);
+	border-left: 2px solid rgb(252 236 0);
+	top: -2px;
+	left: -2px;
+}
+.about .about_content h2::after,
+.section_title::after {
+	border-bottom: 2px solid rgb(252 236 0);
+	border-right: 2px solid rgb(252 236 0);
+	bottom: -2px;
+	right: -2px;
+}
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active, 
+.navbar-light .navbar-nav .nav-link.show, 
+.navbar-light .navbar-nav .show > .nav-link,
+.active {
+	color: rgb(252 236 0) !important;
+}
+#navbarSupportedContent ul li a:hover {
+	color: rgb(252 236 0) !important;
+}
+
+/* ====================================== */
+/* Preloader */
+/* ====================================== */
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ====================================== */
+/* 3) HEADER */
+/* ====================================== */
+.header {
+	padding: 15px 0;
+}
+.custom_navigation a.navbar-brand {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.custom_navigation .navbar-nav li a {
+	color: #fff !important;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	margin: 0 10px;
+	text-transform: capitalize;
+}
+
+
+.stickyadd {
+	background-color: #fff !important;
+	-webkit-box-shadow: 0 1px 8px 3px rgb(0 0 0 / 5%);
+	box-shadow: 0 1px 8px 3px rgb(0 0 0 / 5%);
+	padding: 10px 0px;
+}
+.stickyadd .custom_navigation .navbar-nav li a {
+	color: #000 !important;
+}
+
+/* ====================================== */
+/* 4) HOME SECTION */
+/* ====================================== */
+.home {
+
+}
+.home .header_content {
+	
+}
+.home .header_content h4 {
+	
+}
+.home .header_content h1.header_name,
+.about .about_content h1.header_name {
+	font-size: 54px;
+	font-weight: 500;
+}
+.home .header_content h1.header_name span {
+	font-weight: 700;
+}
+.home .header_content p.header_desc {
+	max-width: 500px;
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+.home .header_content .button_wrapper {
+	
+}
+.btn:hover,
+.button_wrapper .btn:hover {
+	background: #fff;
+	color: #000 !important;
+	border-color: #000 !important;
+}
+.scroll_down {
+	bottom: 30px;
+	z-index: 8;
+}
+.scroll_down span {
+	position: relative;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+	height: 44px;
+	width: 28px;
+	line-height: 54px;
+	border-radius: 30px;
+	border: 2px solid #ffffff;
+	display: inline-block;
+	color: #fff;
+	font-size: 10px;
+}
+.scroll_down span::after {
+	top: 22px;
+	left: 11px;
+	border-radius: 2px;
+	bottom: 0px;
+	-webkit-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+	height: 10px;
+	width: 3px;
+	background: #fff;
+}
+.curv-img {
+	z-index: 1;
+}
+
+/* ====================================== */
+/* 5) ABOUT SECTION */
+/* ====================================== */
+
+.about .about_content h1.header_name {
+	font-size: 40px;
+}
+.social_wrap ul li a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border: 2px solid #bbb;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 50%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.social_wrap ul li a:hover {
+    background-color: rgb(252 236 0);
+    transform: rotate(360deg);
+}
+
+/* ====================================== */
+/* 6) SERVICE SECTION */
+/* ====================================== */
+.service {
+
+}
+.service .service_item .service_item_content h4 {
+	padding-bottom: 10px;
+}
+.service .service_item .service_item_content h4::after {
+	width: 40px;
+	height: 2px;
+	background: #e65f78;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	transform: translate(-50%);
+	bottom: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.service .service_item:hover h4::after {
+	width: 200px;
+}
+
+/* ====================================== */
+/* 7) HIRE SECTION */
+/* ====================================== */
+section#hire {
+	background-attachment: fixed !important;
+}
+
+/* ====================================== */
+/* 8) SKILL SECTION */
+/* ====================================== */
+.skill .skill_item svg.radial-progress {
+	height: auto;
+	max-width: 200px;
+	padding: 1em;
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	width: 100%;
+}
+
+.skill .skill_item svg.radial-progress circle {
+	fill: rgba(0,0,0,0);
+	stroke: #fff;
+	stroke-dashoffset: 219.91148575129; /* Circumference */
+	stroke-width: 10;
+}
+
+.skill .skill_item svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+.skill .skill_item svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+.skill .skill_item svg.radial-progress text {
+	fill: #000;
+	font: 400 1em/1 'Nunito', sans-serif;
+	text-anchor: middle;
+}
+/* 1st Progress color */
+.skill .skill_item svg.radial-progress circle.photoshop { stroke: #a2ed56; }
+/* 2nd Progress color */
+.skill .skill_item svg.radial-progress circle.allustrator { stroke: #83e4e2; }
+/* 3rd Progress color */
+.skill .skill_item svg.radial-progress circle.xd { stroke: #e67e22; }
+/* 4th Progress color */
+.skill .skill_item svg.radial-progress circle.indesign { stroke: red; }
+
+/* ====================================== */
+/* 9) PORTFOLIO SECTION */
+/* ====================================== */
+.portfolio a.active {
+	background: rgb(252 236 0) !important;
+	color: #000 !important;
+}
+.portfolio_item .work_img::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.portfolio_item:hover .work_img::after {
+	opacity: 0.5;
+}
+.portfolio_item:hover .work_img>img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.portfolio_item .card-img-overlay {
+    top: 150%;
+    opacity: 1;
+}
+.portfolio_item:hover .card-img-overlay {
+	top: 0;
+	opacity: 1;
+}
+
+/* ====================================== 
+/* 10) TESTIMONIAL SECTION */
+/* ====================================== */
+.test_item {
+	max-width: 750px;
+}
+.client_img img {
+	width: 100px;
+	height: 100px;
+}
+.client_review {
+	font-size: 18px;
+}
+.owl-theme .owl-controls .owl-page span {
+	width: 20px;
+	height: 8px;
+	margin: 5px 3px;
+	background: rgba(255, 0, 0);
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.owl-theme .owl-controls .owl-page.active span {
+	width: 40px;
+}
+
+/* ====================================== */
+/* 11) CONTACT SECTION */
+/* ====================================== */
+.form-control:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: #ff0000;
+	-webkit-box-shadow: none;
+	box-shadow: none; 
+}
+
+/* ====================================== */
+/* 12) FOOTER SECTION */
+/* ====================================== */
+.footer .social_wrap ul li a {
+	border-color: #000;
+}
+
+/* ====================================== */
+/* 13) BACK TO TOP */
+/* ====================================== */
+a.back_top {
+	width: 2.5rem;
+	height: 3rem;
+	background-color: rgb(252 236 0);
+	border-radius: 20px 20px 0px 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+	bottom: 15px;
+	right: -100%;
+	z-index: 9999;
+}
+a.back_top span.backtop_icon {
+	-webkit-animation: fadeOutUp 2s infinite;
+	animation: fadeOutUp 2s infinite;
+}
+a.back_top.backtop_show {
+	right: 20px;
+}
